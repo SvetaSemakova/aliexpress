@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+    display:flex;
+    flex-direction:row;
+    height: 85px;
+    margin: 0 15%;
+    gap: 20px;
+    background-color: red;
+    border-radius: 10px;
+    }
+
+    .logo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin: 0 40px;
+    }
+    .logo img{
+    height: 80%;
+    } 
+
+    .search input{
+      padding: 20px;
+      margin: 9px;
+      width: 1000px; 
+      height: 65px;
+      align-items: center; 
+      border-radius: 6px;
+      border-style: none;
+      margin-left: 120px;
+      font-size: 17px;
+    }
+    .button1{
+        margin-top: 25px;
+    }
+    
+   
+    .q{
+        margin-top: 25px; 
+        gap: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .button1{
+        background-color: rgb(202, 255, 11);
+        width: 130px;
+        height: 55px;
+        margin: 16px;
+        position: absolute;
+        right: 620px;
+        font-size: 17px;
+        border-radius: 40px;
+        border: none;
+    }
+
+    .button2{
+       width: 55px;
+       height: 55px; 
+       background-image: url(book.jpg);
+       background-size: cover;
+       border: none;
+       border-radius: 5px;
+       position: absolute;
+       top: 25px;
+       left: 690px;
+    }
+    .button3{
+       width: 55px;
+       height: 55px; 
+       background-image: url(cube.jpg);
+       background-size: cover;
+       border: none;
+       border-radius: 5px;
+       position: absolute;
+       top: 25px;
+       right: 550px;
+    }
+    .button4{
+       width: 55px;
+       height: 55px; 
+       background-image: url(tg.jpg);
+       background-size: cover;
+       border: none;
+       border-radius: 5px;
+       position: absolute;
+       top: 25px;
+       right: 480px;
+    }
+    .button5{
+       width: 55px;
+       height: 55px; 
+       background-image: url(smile.jpg);
+       background-size: cover;
+       border: none;
+       border-radius: 5px;
+       position: absolute;
+       top: 25px;
+       right: 410px;
+    }
+    .button1:hover{
+        background-color: rgb(151, 216, 54);
+    }
+    .ogon{
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 180px;
+        height: 45px;
+        position: relative;
+        top: 6px;
+    }
+    
+    .ogon2{
+        width: 110px;
+        height: 45px;
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+        position: relative;
+        top: 1px;
+    }
+   
+   .ogon3{
+        width: 90px;
+        height: 45px;
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;
+        position: relative;
+        top: 1px;
+        background-color: rgb(251, 255, 0);
+        color: rgb(0, 0, 0);
+    }
+
+    .knopki{
+        margin: 0 15%;
+    }
+    .izh1{
+        width: 90px;
+        height: 45px;
+        border-width: 1px;
+        border-color: rgb(225, 225, 225);
+        background-color: rgb(255, 255, 255);
+        font-size: 16px;
+        border-radius: 10px;  
+    }
+    .izh2:hover{
+        background-color: rgb(179, 177, 177);
+    }
+    .izh1:hover{
+        background-color: rgb(187, 186, 186);
+    }
+    .izh2{
+        width: 45px;
+        height: 45px;
+        border-width: 1px;
+        border-color: rgb(225, 225, 225);
+        background-color: rgb(255, 255, 255);
+        font-size: 16px;
+        border-radius: 10px;  
+    }
+    .izh3{
+        width: 55px;
+        height: 45px;
+        border: none;
+        font-size: 16px;
+        border-radius: 10px;  
+    }
+
+    .izh{
+        position: absolute;
+        right: 365px;
+        top: 100px;
+    }
+    .in{
+        margin: 0 15%;
+        position: relative;
+        top: 8px;
+
+    }
+    
+input{
+    width: 10px;
+}
+a{
+    color: red;
+}
+.e{
+    font-family:Arial, sans-serif;
+    font-size: 16px;
+}
+.u{
+    font-weight: bold;
+    font-size: 25px;
+}
+.w{
+    font-weight: bold;
+    color: red;
+    font-size: 25px;
+}
+.nana{
+    border-radius: 20px;
+}
+.container{
+        display: grid;
+        gap: 40px;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto auto; 
+        margin: 0 15%;
+       }
+       .i{
+        color: green;
+       }
+       button{
+        cursor: pointer;
+       }
+       p{
+        margin-bottom: 0.3px;
+       }
+       .rew{
+        position: absolute;
+        left: 1100px;
+        top: 450px;
+       }
+       .aaa{
+        width: 16px;
+        height: 16px;
+       }
+       .t1{
+        background-color: black;
+        color: white;
+        position: absolute;
+        border-radius: 6px;
+        display: block;
+        width: 50px;
+        height: 30px;
+       }
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img class="img-logo" src="ali.jpg" alt="logo">
+        </div>
+
+        <div>
+            <button class="button2"></button>
+        </div>
+
+        <div class="search">
+        <input type="search" placeholder="Костюм для кота">
+        </div>
+
+        <div class="a">
+            <button class="button1">Найти</button>
+
+        <div class="q">
+            <button class="button3"></button>
+            <button class="button4"></button>
+            <button class="button5"></button>
+        </div>
+    </header>
+    <div class="knopki">
+        <button class="ogon">Горящие товары <img src="ogon.png" wigth="25px" height="25px"></button>
+        <button class="ogon2"> Одна цена</button>
+        <button class="ogon3"><strong>Xiaomi</strong></button>
+    </div>
+    <div class="izh">
+        <button class="izh1">Ижевск</button>
+        <button class="izh2">RU</button>
+        <button class="izh3">RUB</button>
+    </div>
+    <img class="in" src="a.png" width="1650px" height="400px">
+
+    <div class="rew">
+    <input class="aaa" type="radio" name="drone" >
+    <label for="huey"></label>
+    
+    <input class="aaa" type="radio" name="drone" >
+    <label for="huey"></label>
+ 
+    <input class="aaa" type="radio" name="drone" >
+    <label for="huey"></label>
+    </div>
+    
+    
+    <div class="container">
+        <div class="item1">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+
+                    <div class="t1">SALE</div>
+            </div>
+        
+        </div>
+        <div class="item2">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item3">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item4">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item5">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item6">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item7">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item8">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item9">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item10">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item11">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        <div class="item12">
+            <div>
+                <img class="nana" src="nana.jpg" width="240px" height="240px">
+            </div>
+            <div>
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+                
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+             
+                <input type="radio" name="drone" >
+                <label for="huey"></label>
+            </div>
+            <div class="e">
+                <P>Сережки с клубничками в <br>стиле Наны Комацу</p> 
+
+            
+                <img src="star.png" width="20" height="28">
+            
+                <label>5.0</label> 
+                <label>893 купили</label>
+            
+            
+                    <p><del>163 P</del> <a>-20%</a></p>
+                    <p class="w">131 P</p>
+                    <p class="i"><img src="car.jpg" width="25px" height="25px">До 14 дней</p>
+            </div>
+        
+        </div>
+        
+    </div>
+</body>
+</html>
